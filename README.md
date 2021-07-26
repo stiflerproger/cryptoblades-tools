@@ -4,7 +4,7 @@
 
 - отображение вероятности победы над врагом
 
-![alt-текст](../master/images/percent-example.png?raw=true "Пример отображения вероятности")
+![alt-текст](../main/images/percent-example.png?raw=true "Пример отображения вероятности")
 
 #### Установка
 
