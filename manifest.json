@@ -1,0 +1,13 @@
+{
+  "name": "CryptoBlades Tools",
+  "version": "1.0",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["https://app.cryptoblades.io/*"],
+      "js": ["cdn/jquery-3.6.0.min.js", "tools/combat.js", "content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "content_security_policy": "connect-src * data: blob: filesystem:"
+}
