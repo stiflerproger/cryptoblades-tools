@@ -70,8 +70,8 @@ function getAlignedPower(hero, weapon) {
     if (!Object(weapon).hasOwnProperty(`stat${i}`)) break;
 
     if (weapon[`stat${i}`].trait !== hero.trait) weaponAligned += (weapon[`stat${i}`].power * 0.0025);
-    if (weapon[`stat${i}`].trait === hero.trait) weaponAligned += (weapon[`stat${i}`].power * 0.002675);
-    if (weapon[`stat${i}`].trait === WEAPON_TRAITS["pwr-icon"]) weaponAligned += (weapon[`stat${i}`].power * 0.002575);
+    else if (weapon[`stat${i}`].trait === WEAPON_TRAITS["pwr-icon"]) weaponAligned += (weapon[`stat${i}`].power * 0.002575);
+    else if (weapon[`stat${i}`].trait === hero.trait) weaponAligned += (weapon[`stat${i}`].power * 0.002675);
   }
 
   return ((weaponAligned + 1) * hero.power) + weapon.bonusPower;
