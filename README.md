@@ -6,6 +6,10 @@
 
 ![alt-текст](../main/images/percent-example.png?raw=true "Пример отображения вероятности")
 
+- отображение уровня после сбора опыта
+
+![alt-текст](../main/images/level-example.png?raw=true "Пример отображения уровня")
+
 #### Установка
 
 - Скачиваем архив (Зелёная кнопка вверху "Code" > "Download ZIP")

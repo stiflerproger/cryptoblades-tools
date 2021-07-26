@@ -24,6 +24,7 @@ const BEATS = {
 
 function init() {
   initFightTools();
+  initExperienceTools();
 }
 
 async function waitForElement(selector) {

@@ -5,7 +5,7 @@
   "content_scripts": [
     {
       "matches": ["https://app.cryptoblades.io/*"],
-      "js": ["cdn/jquery-3.6.0.min.js", "tools/combat.js", "content.js"],
+      "js": ["cdn/jquery-3.6.0.min.js", "tools/combat.js", "tools/experience.js", "content.js"],
       "run_at": "document_end"
     }
   ],

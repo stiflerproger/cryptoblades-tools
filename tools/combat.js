@@ -215,5 +215,13 @@ function getHero() {
     name: $hero.find('.character-name').text().trim(),
     power: Number(($hero.find('.subtext-stats').text().split('Power:')[1]).match(/\d/g).join("")),
     trait: TRAITS[$hero.find('.trait-icon').attr("class").replace('trait-icon', '').trim()],
+    exp: {
+      level: Number(
+        (($hero.find('.subtext-stats').text().split('Power:')[0]).split('Level')[1]).match(/(\d+) \(\d+ \/ \d+ XP\)/)[1]
+      ),
+      xp: Number(
+        (($hero.find('.subtext-stats').text().split('Power:')[0]).split('Level')[1]).match(/\d+ \((\d+) \/ \d+ XP\)/)[1]
+      )
+    }
   }
 }
