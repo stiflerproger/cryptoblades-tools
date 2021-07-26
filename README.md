@@ -9,9 +9,9 @@
 #### Установка
 
 - Скачиваем архив (Зелёная кнопка вверху "Code" > "Download ZIP")
-или клик [Download ZIP](https://github.com/stiflerproger/cryptoblades-tools/archive/refs/heads/master.zip)
+или клик [Download ZIP](https://github.com/stiflerproger/cryptoblades-tools/archive/refs/heads/main.zip)
 
-- Распаковываем на компьютере, и устанавливаем в режиме разработчика в браузере [инстукция](https://comhub.ru/kak-ustanovit-storonnee-rasshirenie-v-google-chrome/)
+- Распаковываем на компьютере, и устанавливаем в режиме разработчика в браузере [инструкция](https://comhub.ru/kak-ustanovit-storonnee-rasshirenie-v-google-chrome/)
 
 ###### Интересные ссылки
 Как считать что выпадет в бою? [cryptoblades.gitbook.io/wiki/combat](https://cryptoblades.gitbook.io/wiki/combat/fighting/calculating-player-power)
