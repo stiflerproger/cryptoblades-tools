@@ -1,4 +1,4 @@
-let fightClicked = false;
+let lastEnemies = [{}, {}, {}, {}];
 
 async function initFightTools() {
 
@@ -6,9 +6,8 @@ async function initFightTools() {
     await waitForElement('.enemy-list');
 
     if (
-      fightClicked
-      || !$('.enemy-list > div').first()
-      || $('.enemy-list > div').first().find('button > h1').text() !== 'Fight!'
+      !$('.enemy-list > div').first()
+      || !isEnemiesChanged()
     ) {
       await sleep(1000);
       continue;
@@ -19,10 +18,22 @@ async function initFightTools() {
 
 }
 
+function isEnemiesChanged() {
+  const enemies = getEnemies();
+
+  for (let i = 0; i < enemies.length; i++) {
+    if (enemies[i].power !== lastEnemies[i].power) return true;
+  }
+
+  return false;
+}
+
 async function fight() {
   const hero = getHero();
   const weapon = await getWeapon();
   const enemies = getEnemies();
+
+  lastEnemies = enemies;
 
   console.log(hero, weapon, enemies);
 
@@ -48,15 +59,6 @@ async function fight() {
     $($('.enemy-list > div')[i]).find('button > h1').text(chance + '%');
 
   }
-
-  $('.enemy-list > div').find('button').click(function() {
-    fightClicked = true;
-    $('.enemy-list > div').find('h1').text('Fight!');
-
-    setTimeout(() => {
-      fightClicked = false;
-    }, 3000);
-  });
 
 }
 
