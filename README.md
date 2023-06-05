@@ -19,3 +19,4 @@
 
 ###### Интересные ссылки
 Как считать что выпадет в бою? [cryptoblades.gitbook.io/wiki/combat](https://cryptoblades.gitbook.io/wiki/combat/fighting/calculating-player-power)
+-
